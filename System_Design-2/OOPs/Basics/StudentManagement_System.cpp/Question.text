@@ -1,0 +1,29 @@
+Question 1: Student Management System
+Concepts: Classes, objects, data members, member functions, constructors.
+
+Problem statement:
+
+Design a Student class to store and display student information.
+
+Requirements:
+1. Create a class named Student with the following data members:
+   - name — student's name.
+   - rollNo — student's roll number.
+   - cgpa — student's CGPA.
+2. Create a parameterized constructor to initialize these attributes when an object is created.
+3. Implement a member function displayDetails() to display all student information.
+4. Implement a member function isEligibleForPlacement() that returns true if the student's CGPA is at least 7.0; otherwise, return false.
+5. In main(), create two student objects with different details and display their information and placement eligibility.
+Sample input values:
+- Student 1: Rahul, 101, 8.5
+- Student 2: Priya, 102, 6.5
+Expected output:
+Name: Rahul
+Roll No: 101
+CGPA: 8.5
+Eligible for placement: Yes
+
+Name: Priya
+Roll No: 102
+CGPA: 6.5
+Eligible for placement: No
