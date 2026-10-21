@@ -12,12 +12,17 @@ class BankAccount{
         balance = amount;
       }
         
-      void deposit(int amount){
+      void deposit(double amount){
+
+          if (amount <= 0) {
+            cout << "Invalid deposit amount!" << endl;
+            return;
+          }
           balance += amount;
           cout<<"Balance : "<<balance<<endl;
       }
 
-      void withdraw(int amount){
+      void withdraw(double amount){
         if(amount>balance){
             cout<< "Low on balance : " << endl;
             return;
