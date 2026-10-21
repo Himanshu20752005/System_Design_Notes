@@ -1,0 +1,21 @@
+Question 2: Bank Account Management System
+Concepts: Classes, objects, constructors, member functions, object state and behavior.
+
+Problem statement:
+
+Design a BankAccount class that simulates basic banking operations.
+
+Requirements:
+1. Create a class named BankAccount with the following data members:
+   - accountHolder — name of the account holder.
+   - balance — current account balance.
+2. Create a parameterized constructor to initialize the account holder's name and initial balance.
+3. Implement a deposit(amount) function that adds money to the account if the amount is positive.
+4. Implement a withdraw(amount) function that deducts money if the amount is positive and does not exceed the available balance. Otherwise, display an appropriate error message.
+5. Implement a displayBalance() function to display the account holder's name and current balance.
+6. In main(), create an account with an initial balance of ₹5,000, deposit ₹2,000, withdraw ₹1,500, and display the final balance.
+Expected output:
+Himanshu: Rs. 5500
+
+
+Bonus challenge: Implement a transfer() function that transfers money from one account to another while ensuring that the sender has sufficient funds.
