@@ -7,7 +7,7 @@ class student{
        int rollNo;
        float cgpa;
 
-    student(string name1 , int rollNo1 , int cgpa1){
+    student(string name1 , int rollNo1 , float cgpa1){
         name = name1;
         rollNo = rollNo1;
         cgpa = cgpa1;
@@ -17,13 +17,15 @@ class student{
         cout << "Name : " << name <<endl;
         cout << "Roll No : "<< rollNo <<endl;
         cout << "CGPA :" << cgpa << endl;
-        isEligibleForPlacement();
+        cout <<  "Eligible for placement: "
+             << (isEligibleForPlacement()?"Yes":"No") 
+             << endl;
     }
      
 
-    void isEligibleForPlacement(){
-        // return cgpa>7.0 ? true : false;
-        cout <<"Eligible for placement : " << (cgpa >= 7.0 ?"Yes":"No")  << endl;
+    bool isEligibleForPlacement(){
+         return cgpa>=7.0 ;
+        
     }
     
 };
