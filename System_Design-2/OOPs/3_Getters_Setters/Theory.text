@@ -1,0 +1,33 @@
+
+/*
+    TOPIC: Getters and Setters in C++
+
+    1. Getters and setters are member functions used to
+       access and modify the private data members of a class.
+
+    2. Getter:
+       - Returns the value of a private data member.
+       - Does not usually modify the object's state.
+
+    3. Setter:
+       - Updates the value of a private data member.
+       - Can validate the input before assigning it.
+
+    4. Encapsulation:
+       - Data members are generally declared private.
+       - Public getters and setters provide controlled access
+         to the private data.
+
+    5. Advantages:
+       - Protects data from uncontrolled modification.
+       - Allows input validation.
+       - Makes implementation easier to maintain.
+
+    6. Naming convention:
+       - getName() -> getter
+       - setName() -> setter
+
+    7. Getters and setters are not mandatory for every
+       private data member. Provide them when they are
+       needed by the class's interface.
+*/
