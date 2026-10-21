@@ -1,0 +1,35 @@
+Question 3: Car and Engine System
+Concepts: Multiple classes, constructors, object composition, object interaction.
+
+Problem statement:
+
+Design a simple car system in which every car has an engine.
+
+Requirements:
+1. Create an Engine class with:
+   - horsepower — engine power.
+   - fuelType — type of fuel used.
+   - A parameterized constructor to initialize these attributes.
+   - A start() function that displays a message indicating that the engine has started.
+2. Create a Car class with:
+   - model — car model name.
+   - An Engine object as a data member.
+   - A constructor that initializes the model and its engine.
+   - A startCar() function that displays the car model, starts the engine, and displays the engine's horsepower and fuel type.
+3. In main(), create two cars with different models and engine specifications.
+4. Call startCar() for both objects.
+Sample input values:
+- Car 1: BMW M4, 503 horsepower, Petrol.
+- Car 2: Toyota Supra, 382 horsepower, Petrol.
+Expected output:
+BMW M4 is starting...
+Engine started!
+Horsepower: 503
+Fuel Type: Petrol
+
+Toyota Supra is starting...
+Engine started!
+Horsepower: 382
+Fuel Type: Petrol
+
+Bonus challenge: Add a stop() function to the Engine class and make the car stop through its engine object.
