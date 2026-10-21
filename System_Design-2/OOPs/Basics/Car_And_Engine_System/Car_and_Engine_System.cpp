@@ -5,10 +5,8 @@ class Engine{
     public :
       int horsepower;
       string fuelType;
-      Engine(int power , string type){
-        horsepower = power;
-        fuelType = type;
-      }
+      Engine(int hp , string type)
+      : horsepower(hp) , fuelType(type){};
 
       void start(){
         cout<<"Engine started !"<<endl;
@@ -24,25 +22,25 @@ class Engine{
 class Car{
     public:
     string model;
-    Car(string m ){
-       model = m;
-    }
+    Engine engine;
+    Car(string m ,int hp , string fuel)
+    : model(m) , engine(hp , fuel){};
 
-    void startCar( int horsepower,string fueltype ){
-        Engine E1(horsepower,fueltype );
+    void startCar(){
+        // Engine E1(horsepower,fueltype ); this creats a temperory engine 
+        //  only needed when we want to check some rules on a temperory engine
         cout<<model <<"is Starting ....."<< endl;
-        E1.start();
-        E1.display();
+        engine.start();
+        engine.display();
     }
 
     
 };
 
 int main(){
-    Car car1("BMW M4");
-    car1.startCar(500, "Jet Oil");
-    
+    Car car1("BMW M4" , 500, "Jet Oil");
+    car1.startCar();
     cout<<"   "<<endl;
-    Car car2("Toyota supra");
-    car2.startCar(382,"Petrol");
+    Car car2("Toyota supra",382,"Petrol");
+    car2.startCar();
 }
