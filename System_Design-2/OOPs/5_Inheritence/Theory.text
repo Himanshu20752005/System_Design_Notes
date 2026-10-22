@@ -1,0 +1,46 @@
+
+    TOPIC: Inheritance in C++
+
+    1. Inheritance is an OOP feature that allows a class
+       to acquire accessible data members and member
+       functions from another class.
+
+    2. The existing class is called the Base Class
+       (Parent Class).
+       The new class is called the Derived Class
+       (Child Class).
+
+    3. Syntax:
+       class Derived : public Base {
+           // Additional members
+       };
+
+    4. Advantages:
+       - Code reusability.
+       - Reduced code duplication.
+       - Supports hierarchical class relationships.
+       - Enables runtime polymorphism when combined
+         with virtual functions.
+
+    5. Types of inheritance:
+       - Single Inheritance
+       - Multiple Inheritance
+       - Multilevel Inheritance
+       - Hierarchical Inheritance
+       - Hybrid Inheritance
+
+    6. Access modes:
+       - public
+       - protected
+       - private
+
+    7. Constructors are not inherited as ordinary
+       member functions. A derived object initializes
+       its base-class subobject through a base constructor.
+
+    8. Private members of the base class are part of the
+       derived object but cannot be accessed directly
+       by derived-class member functions.
+
+    9. Inheritance represents an "is-a" relationship.
+       Example: A Car is a Vehicle.

@@ -1,0 +1,4 @@
+1. What is a destructor in C++?
+A destructor is a special member function that executes when an object's lifetime ends.
+It's commonly used to release resources, such as dynamically allocated memory, open files,
+ or network connections.
