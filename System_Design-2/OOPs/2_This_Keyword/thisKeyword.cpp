@@ -7,6 +7,16 @@ class student {
        int roll;
        double cgpa;
         
+           
+       student(string name ,int roll, double cpga)
+       : name(name) , roll(roll),cgpa(cgpa){
+      // insted of using "this" we can directly assign values
+      //  OR 
+      //   this->name = name;
+      //   this->roll = roll;
+      //   this->cgpa = cgpa;
+       }
+
        student(string name ,int roll, double cpga){
         this->name = name;
         this->roll = roll;
@@ -54,7 +64,7 @@ class student {
        Student(string name) : name(name) {}
 */
 
-
+  // In setter we can do :cgpa(cgpa) its only valid for constructor
        void setCGPA(double cgpa){
         this->cgpa = cgpa;
        }

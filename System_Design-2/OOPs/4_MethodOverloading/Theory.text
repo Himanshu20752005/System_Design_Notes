@@ -1,0 +1,22 @@
+    TOPIC: Method Overloading in C++
+
+    1. Method overloading allows multiple methods in the
+       same class to have the same name but different
+       parameter lists.
+
+    2. Methods can be overloaded by changing:
+       - Number of parameters.
+       - Types of parameters.
+       - Order of parameter types.
+
+    3. Return type alone cannot be used to overload methods.
+
+    4. The compiler determines which overloaded method to
+       call based on the arguments provided. This is called
+       compile-time polymorphism.
+
+    5. Default arguments can sometimes cause ambiguity when
+       used with overloaded methods.
+
+    6. Constructors can also be overloaded by providing
+       different parameter lists.
