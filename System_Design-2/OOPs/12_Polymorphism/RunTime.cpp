@@ -18,7 +18,7 @@ public:
 int main() {
     Student s;
     Human* ptr = &s;
-
+  
     ptr->work();
 
     return 0;
